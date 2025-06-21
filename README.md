@@ -1,15 +1,22 @@
-🧬 ORF 3D Protein Viewer
-A lightweight Streamlit app to upload protein FASTA files, detect open reading frames (ORFs), and visualize their predicted 3D structures using ESMFold and py3Dmol for a Prochlorococcus Marinus Genome
+# 🧬 ORF 3D Protein Viewer
 
-📁 Files Overview
-main.py – Handles FASTA uploads, ORF detection, and interface logic and genreates orf_report.pdf / longest_orf_protein.fasta from sequence.fasta 
+A lightweight **Streamlit** app to upload protein FASTA files, detect **open reading frames (ORFs)**, and visualize their predicted **3D structures** using **ESMFold** and **py3Dmol**, specifically for a *Prochlorococcus Marinus* genome.
 
-viewer.py – Predicts and displays tertiary structure via ESMFold API on a streamlit web app
+---
 
-sequence.fasta - full Prochlorococcus Marinus Genome
+## 📁 Files Overview
 
-random_protein.fasta – Test fasta sequence
+- `main.py` – Handles FASTA uploads, ORF detection, and interface logic.  
+  Generates `orf_report.pdf` and `longest_orf_protein.fasta` from `sequence.fasta`.
 
-longest_orf_protein.fasta – Auto-generated FASTA file from longest ORF found in the pdf by main.py 
+- `viewer.py` – Predicts and displays **tertiary structure** via **ESMFold API** on a Streamlit web app.
 
-orf_report.pdf – Downloadable PDF report with every ORF found and other details in the marinus sequence
+- `sequence.fasta` – Full *Prochlorococcus Marinus* genome input.
+
+- `random_protein.fasta` – Test protein sequence in FASTA format.
+
+- `longest_orf_protein.fasta` – Auto-generated FASTA file of the **longest ORF** found in the genome.
+
+- `orf_report.pdf` – Downloadable PDF report with every ORF found, including positions, translations, and sequence details.
+
+---
